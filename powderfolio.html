@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Powder Guide</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://db.onlinewebfonts.com/c/55f94f4aaef6ae1cd8fc974e98983d35?family=Arcane+Nine" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+	<header><a href="#" class="hero" data-aos="zoom-in" data-aos-duration="1600" data-aos-easing="ease-in">Powderfolio</a>
+		<ul class="bar">
+			<li><a href="#"data-aos="fade-down" data-aos-duration="1600" data-aos-easing="ease-in">Home</a></li>
+			<li><a href="#"data-aos="fade-down" data-aos-duration="1600" data-aos-easing="ease-in">About</a></li>
+			<li><a href="#"data-aos="fade-down" data-aos-duration="1600" data-aos-easing="ease-in">Abilities</a></li>
+			<li><a href="#"data-aos="fade-down" data-aos-duration="1600" data-aos-easing="ease-in">Trivia</a></li>
+			<li><a href="#"data-aos="fade-down" data-aos-duration="1600" data-aos-easing="ease-in">Relations</a></li>
+		</ul>
+
+		<i class='bx bx-menu' onclick="hamburger()"></i>
+		<div class="dropdown">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Abilities</a>
+			<a href="#">Trivia</a>
+			<a href="#">Relations</a>
+			<i class='bx bx-x' onclick="cancel()"></i>
+		</div>
+	</header>
+
+	<section class="info">
+		<div class="info-text">
+			<h3 data-aos="slide-right" data-aos-duration="1600" data-aos-easing="ease-out" data-aos-delay="4500">Arcane</h3>
+			<h1 data-aos="fade-in" data-aos-duration="1600" data-aos-easing="ease-out">Jinx</h1>
+			<p data-aos="fade-out" data-aos-duration="1600" data-aos-easing="ease-in" data-aos-delay="500">We build our own prisons. Bars forged of oaths, codes, commitments. Walls of self-doubt and accepted limitation. We inhabit these cells, these identities, and call them “us”.
+
+			I thought I could break free by eliminating those I deemed my jailers.
+
+			But... Jinx... I think the cycle only ends when you find the will to walk away.</p>
+			<a href="#" data-aos="zoom-in" data-aos-duration="1600" data-aos-easing="ease-out">Click Me</a>
+			<a href="https://www.youtube.com/watch?v=OkscEokV238" target="_blank" class="watch" data-aos="zoom-in" data-aos-duration="1600" data-aos-easing="ease-out"><i class='bx bx-play'></i>Watch My Fight</a>
+		</div>
+		<div class="image" data-aos="zoom-out-left" data-aos-duration="1600" data-aos-easing="ease-in-out">
+			<img src="Jinx.png.png">
+		</div>
+	</section>
+	<div class="icons" data-aos="fade-down" data-aos-duration="1600" data-aos-easing="ease-in" data-aos-delay="500">
+		<a href="#"><i class='bx bxl-instagram'></i></a>
+		<a href="#"><i class='bx bxl-github' ></i></a>
+		<a href="#"><i class='bx bxl-linkedin' ></i></a>
+
+	</div>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({offset:0});
+    </script>
+
+    <script>
+    	function hamburger(){
+    		const navbar=document.querySelector(".dropdown")
+    		navbar.style.transform='translateY(0px)'
+    	}
+    	function cancel(){
+    		const navbar=document.querySelector(".dropdown")
+    		navbar.style.transform='translateY(-400px)'
+    	}
+    </script>
+</body>
+</html>
